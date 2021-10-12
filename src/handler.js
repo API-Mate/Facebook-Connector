@@ -39,7 +39,7 @@ async function Send(req) {
       if (!res || res.error)
         resolve({ status: 'serror', message: (!res ? 'error occurred' : JSON.stringify(res.error)) });
       else
-        resolve({ status: 'success', message: 'You successfully published this : ' + res.text + ' | Post Id: ' + res.id });
+        resolve({ status: 'success', message: 'You successfully published this : ' + req.message + ' | Post Id: ' + res.id });
     });
   });
 }
