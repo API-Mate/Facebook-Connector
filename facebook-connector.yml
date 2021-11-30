@@ -6,7 +6,7 @@ functions:
   facebook-connector:
     lang: node14
     handler: ./src
-    image: apimate/facebook-connector:test0.1
+    image: apimate/facebook-connector:1.0.0
     labels:
       com.openfaas.scale.min: 1
       com.openfaas.scale.max: 20
